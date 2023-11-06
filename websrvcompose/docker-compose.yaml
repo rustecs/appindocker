@@ -1,0 +1,13 @@
+version: "3"
+services:
+  memc:
+    build: memcache/
+    expose: 
+      - "11211"
+
+  webapp:
+    build: webapp/
+    depends_on:
+      - memc
+    ports:
+      - 8080:8080

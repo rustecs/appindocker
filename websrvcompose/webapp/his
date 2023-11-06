@@ -1,0 +1,20 @@
+docker build -t twosrvapp .
+  250  vim Dockerfile
+  251  docker build -t twosrvapp .
+  252  docker run -dit --name tsrw twosrvapp ash 
+  253  docker container ls
+  254  docker ps -a
+  255  docker logs tsrw
+  256  docker container attach tsrw
+  257  docker stop twsr
+  258  docker container ls
+  259  ls
+  260  docker container ls
+  261  docker ps -a
+  262  rm tsrw
+  263  docker rm tsrw
+  264  docker run -dit --name tsrw -p 8080:8080 twosrvapp 
+  265  docker ps -a
+  266  docker logs tsrw
+  267  docker logs -f tsrw
+
